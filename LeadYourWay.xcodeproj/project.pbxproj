@@ -11,6 +11,8 @@
 		BA636F0A2AB82D560047F281 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA636F092AB82D560047F281 /* ContentView.swift */; };
 		BA636F0C2AB82D590047F281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA636F0B2AB82D590047F281 /* Assets.xcassets */; };
 		BA636F0F2AB82D590047F281 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA636F0E2AB82D590047F281 /* Preview Assets.xcassets */; };
+		BAE4D8752AB8474100E386A7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE4D8742AB8474100E386A7 /* MapView.swift */; };
+		BAE4D8772AB847C600E386A7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE4D8762AB847C600E386A7 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		BA636F092AB82D560047F281 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA636F0B2AB82D590047F281 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA636F0E2AB82D590047F281 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAE4D8742AB8474100E386A7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BAE4D8762AB847C600E386A7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,9 @@
 		BA636F062AB82D560047F281 /* LeadYourWay */ = {
 			isa = PBXGroup;
 			children = (
+				BA636F182AB8356C0047F281 /* Services */,
+				BA636F162AB835530047F281 /* Utils */,
+				BA636F152AB833BD0047F281 /* Core */,
 				BA636F072AB82D560047F281 /* LeadYourWayApp.swift */,
 				BA636F092AB82D560047F281 /* ContentView.swift */,
 				BA636F0B2AB82D590047F281 /* Assets.xcassets */,
@@ -65,6 +72,77 @@
 				BA636F0E2AB82D590047F281 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA636F152AB833BD0047F281 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BAE4D86E2AB83E4200E386A7 /* Navigation */,
+				BAE4D86D2AB83E1700E386A7 /* Map */,
+				BAE4D86C2AB83E0D00E386A7 /* Authentication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BA636F162AB835530047F281 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BA636F182AB8356C0047F281 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BAE4D86C2AB83E0D00E386A7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BAE4D86D2AB83E1700E386A7 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				BAE4D8712AB83F8000E386A7 /* ViewModel */,
+				BAE4D8702AB83F7600E386A7 /* Model */,
+				BAE4D86F2AB83F6C00E386A7 /* MapView */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		BAE4D86E2AB83E4200E386A7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		BAE4D86F2AB83F6C00E386A7 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				BAE4D8742AB8474100E386A7 /* MapView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		BAE4D8702AB83F7600E386A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAE4D8712AB83F8000E386A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BAE4D8762AB847C600E386A7 /* MapViewController.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA636F0A2AB82D560047F281 /* ContentView.swift in Sources */,
+				BAE4D8752AB8474100E386A7 /* MapView.swift in Sources */,
 				BA636F082AB82D560047F281 /* LeadYourWayApp.swift in Sources */,
+				BAE4D8772AB847C600E386A7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +349,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LeadYourWay/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app need your location to show it on the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +378,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LeadYourWay/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app need your location to show it on the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
