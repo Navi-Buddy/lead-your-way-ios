@@ -11,7 +11,7 @@ import MapKit
 
 
 var latitude = 37.331516
-var longitude = -121.891054
+var longitude = -121.891054	
 
 
 final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
