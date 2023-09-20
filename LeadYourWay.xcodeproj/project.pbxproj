@@ -13,6 +13,9 @@
 		BA636F0F2AB82D590047F281 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA636F0E2AB82D590047F281 /* Preview Assets.xcassets */; };
 		BAE4D8752AB8474100E386A7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE4D8742AB8474100E386A7 /* MapView.swift */; };
 		BAE4D8772AB847C600E386A7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE4D8762AB847C600E386A7 /* MapViewController.swift */; };
+		BAFA7EAE2ABACB5F003A8948 /* NavTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA7EAD2ABACB5E003A8948 /* NavTabView.swift */; };
+		BAFA7EB32ABAD02C003A8948 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA7EB22ABAD02C003A8948 /* InboxView.swift */; };
+		BAFA7EB72ABAD1D9003A8948 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA7EB62ABAD1D9003A8948 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		BA636F0E2AB82D590047F281 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BAE4D8742AB8474100E386A7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BAE4D8762AB847C600E386A7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BAFA7EAD2ABACB5E003A8948 /* NavTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTabView.swift; sourceTree = "<group>"; };
+		BAFA7EB22ABAD02C003A8948 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		BAFA7EB62ABAD1D9003A8948 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		BA636F152AB833BD0047F281 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BAFA7EAF2ABACF7A003A8948 /* Messaging */,
 				BAE4D86E2AB83E4200E386A7 /* Navigation */,
 				BAE4D86D2AB83E1700E386A7 /* Map */,
 				BAE4D86C2AB83E0D00E386A7 /* Authentication */,
@@ -101,6 +108,8 @@
 		BAE4D86C2AB83E0D00E386A7 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				BAFA7EB52ABAD1C1003A8948 /* ViewModel */,
+				BAFA7EB42ABAD1B6003A8948 /* Views */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -118,6 +127,7 @@
 		BAE4D86E2AB83E4200E386A7 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				BAFA7EAC2ABACB20003A8948 /* View */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -141,6 +151,53 @@
 			isa = PBXGroup;
 			children = (
 				BAE4D8762AB847C600E386A7 /* MapViewController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BAFA7EAC2ABACB20003A8948 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA7EAD2ABACB5E003A8948 /* NavTabView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BAFA7EAF2ABACF7A003A8948 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA7EB12ABACF9E003A8948 /* ViewModel */,
+				BAFA7EB02ABACF95003A8948 /* Views */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		BAFA7EB02ABACF95003A8948 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA7EB22ABAD02C003A8948 /* InboxView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BAFA7EB12ABACF9E003A8948 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BAFA7EB42ABAD1B6003A8948 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA7EB62ABAD1D9003A8948 /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BAFA7EB52ABAD1C1003A8948 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -216,8 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA636F0A2AB82D560047F281 /* ContentView.swift in Sources */,
+				BAFA7EB32ABAD02C003A8948 /* InboxView.swift in Sources */,
 				BAE4D8752AB8474100E386A7 /* MapView.swift in Sources */,
 				BA636F082AB82D560047F281 /* LeadYourWayApp.swift in Sources */,
+				BAFA7EAE2ABACB5F003A8948 /* NavTabView.swift in Sources */,
+				BAFA7EB72ABAD1D9003A8948 /* ProfileView.swift in Sources */,
 				BAE4D8772AB847C600E386A7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
