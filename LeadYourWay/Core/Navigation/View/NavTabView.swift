@@ -13,31 +13,45 @@ struct NavTabView: View {
         TabView(selection: $index){
             
             
+            //Discover view
+            MapView()
+                .tabItem{
+                    Label("Discover", systemImage: "magnifyingglass")
+                }
+                .onAppear{index=0}
+                .tag(0)
+            
+            //Favorites view
+            FavoriteView()
+                .tabItem{
+                    Label("Favorites", systemImage: "heart")
+                }
+                .onAppear{index=1}
+                .tag(1)
+            
+            // Map View
+            RidesView()
+                .tabItem{
+                    Label("Your rides", image: "ios-bicycle-1-32")
+                }
+                .onAppear{index=2}
+                .tag(2)
+            
             //Messaging view
             InboxView()
                 .tabItem{
                     Label("Inbox", systemImage: "message.badge")
                 }
-                .onAppear{index=0}
-                .tag(0)
-            
-            
-            
-            // Map View
-            MapView()
-                .tabItem{
-                    Label("Discover", image: "ios-bicycle-1-32")
-                }
-                .onAppear{index=1}
-                .tag(1)
+                .onAppear{index=3}
+                .tag(3)
             
             //Profile View
             ProfileView()
                 .tabItem{
                     Label("Profile", systemImage: "person")
                 }
-                .onAppear{index=2}
-                .tag(2)
+                .onAppear{index=4}
+                .tag(4)
             
             
         }

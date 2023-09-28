@@ -14,14 +14,19 @@ import MapKit
 struct MapView: View {
     
     @StateObject private var viewModel = MapViewModel()
+    @State private var searchLocation = ""
     
     var body: some View {
-        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
-            .ignoresSafeArea()
-            .accentColor(Color(.systemBlue))
-            .onAppear {
-                viewModel.checkIfLocationServiceIsEnabled()
-            }
+        NavigationStack{
+            
+            Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+                .ignoresSafeArea()
+                .accentColor(Color(.systemBlue))
+                .onAppear {
+                    viewModel.checkIfLocationServiceIsEnabled()
+                }
+        }
+        .searchable(text: $searchLocation, prompt: "Where are you?")
     }
 }
 
