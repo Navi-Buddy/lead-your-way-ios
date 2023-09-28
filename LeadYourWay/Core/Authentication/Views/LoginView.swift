@@ -40,8 +40,8 @@ struct LoginView: View {
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 }
                 
-                Button {
-                    
+                NavigationLink{
+                    NavTabView()
                 } label:{
                     Text("Login")
                         .font(.subheadline)
