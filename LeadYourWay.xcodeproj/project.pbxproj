@@ -19,11 +19,13 @@
 		BA96071E2AC4B85000B3FF89 /* PasswordRecoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96071D2AC4B85000B3FF89 /* PasswordRecoveryView.swift */; };
 		BAE4D8752AB8474100E386A7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE4D8742AB8474100E386A7 /* MapView.swift */; };
 		BAE4D8772AB847C600E386A7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE4D8762AB847C600E386A7 /* MapViewController.swift */; };
-		BAE92D152ABF3D54000E3866 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE92D142ABF3D54000E3866 /* FavoriteView.swift */; };
 		BAE92D1A2ABF3EBA000E3866 /* RidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE92D192ABF3EBA000E3866 /* RidesView.swift */; };
 		BAFA7EAE2ABACB5F003A8948 /* NavTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA7EAD2ABACB5E003A8948 /* NavTabView.swift */; };
-		BAFA7EB32ABAD02C003A8948 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA7EB22ABAD02C003A8948 /* InboxView.swift */; };
-		BAFA7EB72ABAD1D9003A8948 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA7EB62ABAD1D9003A8948 /* ProfileView.swift */; };
+		F46E62B02AEF001C0060C334 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46E62AF2AEF001C0060C334 /* ProfileView.swift */; };
+		F46E62B22AEF02960060C334 /* ProfileOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46E62B12AEF02960060C334 /* ProfileOptionRowView.swift */; };
+		F46E62B42AEF18BC0060C334 /* BicycleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46E62B32AEF18BC0060C334 /* BicycleListView.swift */; };
+		F46E62B62AEF1A180060C334 /* BicycleListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46E62B52AEF1A180060C334 /* BicycleListItem.swift */; };
+		F46E62B82AEF23240060C334 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46E62B72AEF23240060C334 /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,11 +42,13 @@
 		BA96071D2AC4B85000B3FF89 /* PasswordRecoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryView.swift; sourceTree = "<group>"; };
 		BAE4D8742AB8474100E386A7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BAE4D8762AB847C600E386A7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		BAE92D142ABF3D54000E3866 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		BAE92D192ABF3EBA000E3866 /* RidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesView.swift; sourceTree = "<group>"; };
 		BAFA7EAD2ABACB5E003A8948 /* NavTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTabView.swift; sourceTree = "<group>"; };
-		BAFA7EB22ABAD02C003A8948 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
-		BAFA7EB62ABAD1D9003A8948 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F46E62AF2AEF001C0060C334 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F46E62B12AEF02960060C334 /* ProfileOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionRowView.swift; sourceTree = "<group>"; };
+		F46E62B32AEF18BC0060C334 /* BicycleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BicycleListView.swift; path = Views/BicycleListView.swift; sourceTree = SOURCE_ROOT; };
+		F46E62B52AEF1A180060C334 /* BicycleListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BicycleListItem.swift; path = Views/BicycleListItem.swift; sourceTree = SOURCE_ROOT; };
+		F46E62B72AEF23240060C334 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBarView.swift; path = Views/SearchBarView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,9 @@
 		BA258D492ABB73D400C43989 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F46E62B32AEF18BC0060C334 /* BicycleListView.swift */,
+				F46E62B52AEF1A180060C334 /* BicycleListItem.swift */,
+				F46E62B72AEF23240060C334 /* SearchBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,10 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				BAE92D162ABF3E9F000E3866 /* Rides */,
-				BAE92D112ABF3D34000E3866 /* Favorite */,
 				BA258D482ABB73B800C43989 /* Bicycle */,
 				BA258D452ABB723400C43989 /* Components */,
-				BAFA7EAF2ABACF7A003A8948 /* Messaging */,
 				BAE4D86E2AB83E4200E386A7 /* Navigation */,
 				BAE4D86D2AB83E1700E386A7 /* Map */,
 				BAE4D86C2AB83E0D00E386A7 /* Authentication */,
@@ -224,30 +229,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		BAE92D112ABF3D34000E3866 /* Favorite */ = {
-			isa = PBXGroup;
-			children = (
-				BAE92D132ABF3D46000E3866 /* ViewModel */,
-				BAE92D122ABF3D41000E3866 /* Views */,
-			);
-			path = Favorite;
-			sourceTree = "<group>";
-		};
-		BAE92D122ABF3D41000E3866 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				BAE92D142ABF3D54000E3866 /* FavoriteView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		BAE92D132ABF3D46000E3866 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		BAE92D162ABF3E9F000E3866 /* Rides */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,37 +261,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		BAFA7EAF2ABACF7A003A8948 /* Messaging */ = {
-			isa = PBXGroup;
-			children = (
-				BAFA7EB12ABACF9E003A8948 /* ViewModel */,
-				BAFA7EB02ABACF95003A8948 /* Views */,
-			);
-			path = Messaging;
-			sourceTree = "<group>";
-		};
-		BAFA7EB02ABACF95003A8948 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				BAFA7EB22ABAD02C003A8948 /* InboxView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		BAFA7EB12ABACF9E003A8948 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		BAFA7EB42ABAD1B6003A8948 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BAFA7EB62ABAD1D9003A8948 /* ProfileView.swift */,
 				BA9607132AC498C100B3FF89 /* RegisterView.swift */,
 				BA9607152AC498C800B3FF89 /* LoginView.swift */,
 				BA96071D2AC4B85000B3FF89 /* PasswordRecoveryView.swift */,
+				F46E62AF2AEF001C0060C334 /* ProfileView.swift */,
+				F46E62B12AEF02960060C334 /* ProfileOptionRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -394,18 +352,20 @@
 			files = (
 				BA9607142AC498C100B3FF89 /* RegisterView.swift in Sources */,
 				BA636F0A2AB82D560047F281 /* ContentView.swift in Sources */,
-				BAFA7EB32ABAD02C003A8948 /* InboxView.swift in Sources */,
+				F46E62B42AEF18BC0060C334 /* BicycleListView.swift in Sources */,
+				F46E62B22AEF02960060C334 /* ProfileOptionRowView.swift in Sources */,
 				BA9607192AC49E8800B3FF89 /* IdentifiablePlace.swift in Sources */,
 				BA96071C2AC4AF8100B3FF89 /* TextFieldModifier.swift in Sources */,
 				BAE4D8752AB8474100E386A7 /* MapView.swift in Sources */,
+				F46E62B62AEF1A180060C334 /* BicycleListItem.swift in Sources */,
 				BA636F082AB82D560047F281 /* LeadYourWayApp.swift in Sources */,
 				BA258D472ABB724800C43989 /* StatsView.swift in Sources */,
+				F46E62B02AEF001C0060C334 /* ProfileView.swift in Sources */,
 				BA9607162AC498C800B3FF89 /* LoginView.swift in Sources */,
 				BA96071E2AC4B85000B3FF89 /* PasswordRecoveryView.swift in Sources */,
 				BAFA7EAE2ABACB5F003A8948 /* NavTabView.swift in Sources */,
-				BAFA7EB72ABAD1D9003A8948 /* ProfileView.swift in Sources */,
-				BAE92D152ABF3D54000E3866 /* FavoriteView.swift in Sources */,
 				BAE92D1A2ABF3EBA000E3866 /* RidesView.swift in Sources */,
+				F46E62B82AEF23240060C334 /* SearchBarView.swift in Sources */,
 				BAE4D8772AB847C600E386A7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

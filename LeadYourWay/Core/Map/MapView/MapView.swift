@@ -17,16 +17,17 @@ struct MapView: View {
     @State private var searchLocation = ""
     
     var body: some View {
-        NavigationStack{
-            
-            Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
-                .ignoresSafeArea()
-                .accentColor(Color(.systemBlue))
-                .onAppear {
-                    viewModel.checkIfLocationServiceIsEnabled()
-                }
+        NavigationStack{            
+            VStack{
+                
+                Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
+                    .ignoresSafeArea()
+                    .accentColor(Color(.systemBlue))
+                    .onAppear {
+                        viewModel.checkIfLocationServiceIsEnabled()
+                    }
+            }
         }
-        .searchable(text: $searchLocation, prompt: "Where are you?")
     }
 }
 

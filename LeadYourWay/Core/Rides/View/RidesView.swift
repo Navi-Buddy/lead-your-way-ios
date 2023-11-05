@@ -9,7 +9,9 @@ import SwiftUI
 
 struct RidesView: View {
     var body: some View {
-        Text("Rides View")
+        VStack{
+            Text("Rides View")
+        }
     }
 }
 
